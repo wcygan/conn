@@ -1,0 +1,15 @@
+[package]
+name = "conn"
+version = "0.1.0"
+edition = "2021"
+authors = ["Will Cygan <wcygan.io@gmail.com>"]
+description = "A tool to test TCP connections"
+categories = ["network-programming"]
+keywords = ["TCP", "network-programming"]
+repository = "https://github.com/wcygan/conn"
+homepage = "https://github.com/wcygan/conn"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4.2.1", features = ["derive"] }
+tokio = { version = "1.27.0", features = ["full"] }
