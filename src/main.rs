@@ -25,16 +25,12 @@ async fn main() -> Result<(), std::io::Error> {
 /// A tool that connects to an address over TCP
 #[derive(Parser)]
 struct Address {
-    /// IP address
-    #[arg(short = 'i', long = "ip")]
-    ip: String,
-    /// port
-    #[arg(short = 'p', long = "port")]
-    port: u16,
+    /// The address to connect to
+    address: String,
 }
 
 impl Address {
-    fn as_string(&self) -> String {
-        format!("{}:{}", self.ip, self.port)
+    fn as_string(self) -> String {
+        self.address
     }
 }

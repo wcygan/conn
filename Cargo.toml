@@ -1,6 +1,6 @@
 [package]
 name = "conn"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["Will Cygan <wcygan.io@gmail.com>"]
 description = "A tool to test TCP connections"
